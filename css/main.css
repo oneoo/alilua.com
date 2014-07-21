@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(../font/Pacifico.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans Mono'), local('DroidSansMono'), url(../font/Droid-Sans-Mono.woff) format('woff');
+}
+
+body, html{
+    height:100%;margin:0;
+    text-align: center;
+    color:#333;
+}
+#welcome{
+    height:100%;
+    border-bottom:1px solid #ececec;
+    display: table;
+    width: 100%;
+}
+#menu{position: fixed;top: 35px;right: 30px;text-align:left}
+#menu a.menu{text-decoration:none;font-size:2em;position: absolute;
+top: 0;
+right: 0;text-align:center;line-height:24px;height:28px;width:28px;overflow: hidden}
+#menu a.menu:hover,#menu:hover a.menu{text-decoration:none;box-shadow: 0 1px 3px 0 #eee;}
+#menu:hover ul{display:block}
+#menu ul,#menu ol,#menu li{list-style:none;padding:0;margin:0;}
+#menu ul{background:#fff;padding:24px;display:none;margin-top:28px;box-shadow: 0 1px 3px 0 #eee;}
+#menu a{color:#000;text-decoration:none;display:block}
+#menu a:hover{text-decoration:underline;}
+#menu ul li{margin:12px 0;}
+#menu ol{margin-left:2em;}
+#menu ol li{margin:0;}
+
+h1,h2{color:#000;}
+h3{border-bottom:1px solid #eee;padding-bottom:6px;margin-bottom:6px}
+p.c{text-align: center}
+
+xmp{display:none}
+#welcome div{vertical-align:middle;display: table-cell;padding-bottom:120px;}
+#welcome h1{font-family: 'Pacifico', cursive;font-weight:normal;color:#000;margin:0;border:0;padding:0;font-size:460%}
+#welcome p{color:#666;font-size:120%;}
+.section{text-align: left;width:860px;margin: auto;padding:68px 28px;border-bottom:1px solid #ececec;}
+
+pre,code{font-family: Consolas, 'Droid Sans Mono', "Liberation Mono", Courier, monospace;font-size:0.85em}
+pre code{font-size:1em}
+pre .str, code .str { color: #f19733; }
+pre .kwd, code .kwd { color: #61d6ef; }
+pre .com, code .com { color: #75715e;}
+pre .typ, code .typ { color: #61d6ef; }
+pre .lit, code .lit { color: #61d6ef; }
+pre .pun, code .pun { color: #000; }
+pre .pln, code .pln { color: #000; }
+pre .tag, code .tag { color: #a6e22d; }
+pre .atn, code .atn { color: #e94470; }
+pre .atv, code .atv { color: #f19733; }
+pre .dec, code .dec { color: #ae81fd; }
+
+pre.prettyprint, code.prettyprint, pre code.prettyprint {
+    display:block;
+        background-color: #fafafa;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -o-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -khtml-border-radius: 6px;
+        border-radius: 6px;
+    border:1px solid #eee;
+}
+
+pre.prettyprint, code.prettyprint, pre code.prettyprint {
+        width: 100%;
+        margin: 1em auto;
+        white-space: pre-wrap;
+}
+pre.prettyprint ol, code.prettyprint ol, pre code.prettyprint ol{padding: 1em 1em 1em 4em;display:block;}
+
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #ccc; } /* IE indents via margin-left */
+pre ol li, code ol li{ background:none}
+
+@media print {
+  pre .str, code .str { color: #060; }
+  pre .kwd, code .kwd { color: #006; font-weight: bold; }
+  pre .com, code .com { color: #600; font-style: italic; }
+  pre .typ, code .typ { color: #404; font-weight: bold; }
+  pre .lit, code .lit { color: #044; }
+  pre .pun, code .pun { color: #440; }
+  pre .pln, code .pln { color: #000; }
+  pre .tag, code .tag { color: #006; font-weight: bold; }
+  pre .atn, code .atn { color: #404; }
+  pre .atv, code .atv { color: #060; }
+}
+
+code.prettyprint{width:auto;display:inline;}
+code.prettyprint ol, code.prettyprint ol li{width:auto;display:inline;list-style:none;padding:1px 2px 1px 2px;}
+code.prettyprint{-moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -o-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -khtml-border-radius: 3px;
+        border-radius: 3px;border:0}
+pre code.prettyprint ol li{display:list-item;list-style:decimal}
+
+table {border-collapse: collapse;font-size:1em}
+td, th {border:1px solid #ddd;padding: 0.5rem;text-align: left;}
+th{background:#EEE}
